@@ -1,0 +1,25 @@
+header {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  text-align: center;
+}
+
+h1 {
+  font-size: 52px;
+}
+
+.nav {
+  margin: 30px;
+}
+
+/*
+.basicfolio,
+.strapfolio {
+  margin: 0 30px;
+  padding: 0;
+} 
+*/
+
+a:visited {
+  color: blue;
+}
