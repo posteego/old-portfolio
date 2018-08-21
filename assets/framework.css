@@ -25,7 +25,7 @@
 .arrow_box {
 	position: relative;
 	background: #ffffff;
-  border: 2px solid #000000;
+  border: 1px solid #000000;
 }
 .arrow_box:after, .arrow_box:before {
 	right: 100%;
