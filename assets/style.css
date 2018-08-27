@@ -27,6 +27,7 @@ body {
   width: 50%;
   float: right;
   padding-right: 10vw;
+  text-align: center;
 }
 
 
@@ -37,4 +38,9 @@ a {
 }
 a:visited {
   color: blue;
+}
+
+.title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3vh;
 }

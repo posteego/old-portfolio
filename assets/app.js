@@ -21,53 +21,71 @@ var aboutBtn = $('.about-btn'),
   projectsBtn = $('.projects-btn'),
   contactBtn = $('.contact-btn');
 
-$('.about').hide();
-$('.projects').hide();
-$('.contact').hide();
+$(document).ready(function () {
+  hide();
+});
 
-$(document).click(function (event) {
-  if (!$(event.target).closest(aboutBtn).length) {
-    if ($('.about').is(":visible")) {
-      $('.about').hide();
-    }
-    projectsBtn.css('opacity', 1);
-    contactBtn.css('opacity', 1);
-    aboutBtn.css('font-weight', 300);
-  }
-  if ($(event.target).closest(aboutBtn).length) {
+$(document).on('click', '.about-btn', function (event) {
+  if ($('.about').is(":visible")) {
+    hide();
+    clearstyles();
+  } else {
+    hide();
+    clearstyles();
+    $('.about').show();
     projectsBtn.css('opacity', 0.5);
     contactBtn.css('opacity', 0.5);
     aboutBtn.css('font-weight', 500);
-    $('.about').show();
   }
+});
 
-  if (!$(event.target).closest(projectsBtn).length) {
-    if ($('.projects').is(":visible")) {
-      $('.projects').hide();
-    }
-    aboutBtn.css('opacity', 1);
-    contactBtn.css('opacity', 1);
-    projectsBtn.css('font-weight', 300);
-  }
-  if ($(event.target).closest(projectsBtn).length){
-    contactBtn.css('opacity', 0.5);
-    aboutBtn.css('opacity', 0.5);
-    projectsBtn.css('font-weight', 500);
+$(document).on('click', '.projects-btn', function (event) {
+  if ($('.projects').is(":visible")) {
+    hide();
+    clearstyles();
+  } else {
+    hide();
+    clearstyles();
     $('.projects').show();
+    aboutBtn.css('opacity', 0.5);
+    contactBtn.css('opacity', 0.5);
+    projectsBtn.css('font-weight', 500);
   }
+});
 
-  if (!$(event.target).closest(contactBtn).length) {
-    if ($('.contact').is(":visible")) {
-      $('.contact').hide();
-    }
-    projectsBtn.css('opacity', 1);
-    aboutBtn.css('opacity', 1);
-    contactBtn.css('font-weight', 300);
-  }
-  if ($(event.target).closest(contactBtn).length){
+$(document).on('click', '.contact-btn', function (event) {
+  if ($('.contact').is(":visible")) {
+    hide();
+    clearstyles();
+  } else {
+    hide();
+    clearstyles();
+    $('.contact').show();
     projectsBtn.css('opacity', 0.5);
     aboutBtn.css('opacity', 0.5);
     contactBtn.css('font-weight', 500);
-    $('.contact').show();
   }
 });
+
+/* utility */
+
+var clearstyles = () => {
+  aboutBtn.css({
+    'opacity': 1,
+    'font-weight': 300
+  });
+  projectsBtn.css({
+    'opacity': 1,
+    'font-weight': 300
+  });
+  contactBtn.css({
+    'opacity': 1,
+    'font-weight': 300
+  });
+}
+
+var hide = () => {
+  $('.about').hide();
+  $('.projects').hide();
+  $('.contact').hide();
+}

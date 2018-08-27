@@ -22,6 +22,12 @@
   font-size: 40px;
 }
 
+.box {
+	position: relative;
+	border: 1px solid #000000;
+	top: -5vh;
+}
+
 .arrow_box {
 	position: relative;
 	background: #ffffff;
@@ -41,8 +47,8 @@
 .arrow_box:after {
 	border-color: rgba(255, 255, 255, 0);
 	border-right-color: #ffffff;
-	border-width: 20px;
-	margin-top: -20px;
+	border-width: 22px;
+	margin-top: -22px;
 }
 .arrow_box:before {
 	border-color: rgba(0, 0, 0, 0);
@@ -50,6 +56,7 @@
 	border-width: 23px;
 	margin-top: -23px;
 }
+
 
 /* ~responsiveness~ */
 
