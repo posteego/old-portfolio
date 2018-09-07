@@ -1,0 +1,24 @@
+.title:hover {
+  padding-left: 1%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 33% 33% 33%;
+  grid-column-gap: 0px;
+  grid-row-gap: 15px;
+  justify-content: space-evenly;
+  justify-items: center;
+  margin: 25px
+}
+
+.label {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  text-decoration: underline;
+}
+
+.item {
+}
