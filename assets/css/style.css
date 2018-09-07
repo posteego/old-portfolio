@@ -20,5 +20,6 @@
   text-decoration: underline;
 }
 
-.item {
+.img:hover {
+  border: 1px black solid;
 }
