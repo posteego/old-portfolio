@@ -1,4 +1,6 @@
 .main {
+  background-color: #CC0953;
+  color: white;
   display: grid;
   grid-template: 
     ". header . . ." 20px
