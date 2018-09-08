@@ -1,6 +1,4 @@
 .main {
-  background-color: #CC0953;
-  color: white;
   display: grid;
   grid-template: 
     ". header . . ." 20px
@@ -12,21 +10,34 @@
 }
 
 .header {
+  position: fixed;
+  left: 16%;
   grid-area: header;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
-  font-size: 28px;
-  padding-top: 20px;
+  font-size: 42px;
+  padding-top: 10px;
 }
 
 .sidebar-left {
+  position: fixed;
   grid-area: sidebar-left;
   padding-left: 20%;
-  padding-top: 15%;
+  padding-top: 23%;
   font-family: 'Poppins', sans-serif;
+  font-weight: 100;
   font-size: 40px;
 }
 
 .content {
   grid-area: content;
+}
+
+.sidebar-left a {
+  display: block;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
 }
