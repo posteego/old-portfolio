@@ -1,1 +1,1 @@
-# kennethpostigo.me (kpostigo.github.io)
+# kennethpostigo.me (old portfolio)
