@@ -1,1 +1,1 @@
-# kennethpostigo.me (old portfolio)
+# old-portfolio
